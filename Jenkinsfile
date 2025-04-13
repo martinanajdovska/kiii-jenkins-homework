@@ -1,4 +1,3 @@
-pipeline {
 node {
     def app
     stage('Clone repository') {
@@ -14,6 +13,4 @@ node {
             // signal the orchestrator that there is a new version
         }
     }
-}
-
 }
