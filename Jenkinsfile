@@ -1,4 +1,5 @@
 pipeline {
+node {
     def app
     stage('Clone repository') {
         checkout scm
@@ -13,4 +14,6 @@ pipeline {
             // signal the orchestrator that there is a new version
         }
     }
+}
+
 }
